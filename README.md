@@ -10,3 +10,8 @@
 * HTML5;
 * MySQL 8
 * XAMPP 3.2.4
+
+## Acesso ao Dashboard
+
+* usuario: admin@email.com
+* senha: 123 

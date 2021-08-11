@@ -13,5 +13,5 @@
 
 ## Acesso ao Dashboard
 
-* usuario: admin@email.com
+* usuario: admin@teste.com
 * senha: 123 

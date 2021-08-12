@@ -15,3 +15,7 @@
 
 * usuario: admin@teste.com
 * senha: 123 
+
+## SQL
+
+* Códigos em [Sql](https://github.com/marcilio-freitas27/facex-FullStack/tree/master/sql)

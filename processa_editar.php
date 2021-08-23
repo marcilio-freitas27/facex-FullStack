@@ -6,19 +6,18 @@ include 'db.php';
 
 $id = $_GET['id'];
 
-$sqli = "SELECT id, nome, funcao_setor, setor_trabalho FROM cadastro WHERE id = $id";
+$sqli = "SELECT nome, funcao_setor, setor_trabalho FROM cadastro WHERE id = $id";
 
 $queryi = mysqli_query($con,$sqli);
 
-foreach($queryi as $linha) {
-    $id = $linha['id']; ?>
-<div class="container">
+foreach($queryi as $linha) { ?>
+<div class="container gap-1">
     <div class="row justify-content-center">
-        <div class="col-md-6">
+        <div class="col-md-6 p-2">
             <div class="card">
                 <div class="card-header"><h6>Editar funcionario</h6></div>
                     <div class="card-body">
-                        <form action="editar.php" method="POST">
+                        <form method="POST" action="editar.php">
                             <div class="">
                                 <input type="hidden" name="id" value="<?php echo $id?>">
                                 <div class="form-group row">
@@ -47,7 +46,6 @@ foreach($queryi as $linha) {
                                         <button class="btn btn-danger" type="submit">Editar</button>
                                     </div>
                                 </div>
-                                
                             </div>
                         </form>
                     </div>

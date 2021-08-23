@@ -1,6 +1,6 @@
 
-<section>
-    <article class="container">
+<section class="gap-1">
+    <article class="p-2 container">
     
         <div class="card">
             <h5 class="card-header">Bem vindos</h5>

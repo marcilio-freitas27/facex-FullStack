@@ -9,9 +9,10 @@ $host ='localhost';
 
 $con = mysqli_connect($host,$user,$pass,$db);
 
-$sql = "SELECT id,nome,email,senha,permissao FROM funcionarios";
+$sql = "SELECT id,nome,email,senha,permissao, acompanhante FROM funcionarios";
 
 $query = mysqli_query($con,$sql);
+
 
 
 ?>

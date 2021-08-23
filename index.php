@@ -36,6 +36,15 @@ switch ($pagina) {
     case 'editar':
         include 'processa_editar.php';
         break;
+    case 'inserir':
+        include 'inserir_cadastro.php';
+        break;
+    case 'escolha':
+        include 'views/escolha_form.php';
+        break;
+    case 'escolha_conta':
+        include 'views/escolha_conta.php';
+        break;
 }
 
 

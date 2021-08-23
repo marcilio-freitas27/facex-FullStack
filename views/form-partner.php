@@ -1,87 +1,54 @@
-<section>
-    <div class="container">
-    <main>
-        <div class="py-5 text-center">
-        
-        <h2>Dados de Usuário</h2>
+<section class="gap-1">
+    <div class="p-2 container">
+    <main class="card">
+        <div class="py-5 text-center card-header">
+            <h2>Dados do Funcionário</h2>
         </div>
+        <div class="card-body">
+            <form method='POST' id='form1' action='?pagina=inserir'>
 
-        <div class="row">
-        <div class="">
-            <h4 class="mb-3">Dados Pessoais</h4>
+            <div class="row">
 
-            <hr class="my-4">
+                <form class="needs-validation" id="login" novalidate>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" name="nome" class="form-control" placeholder="Nome" required>
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                    </div>
 
-            <form class="needs-validation" action="?pagina=home" method="post" novalidate>
-            <div class="row g-3">
-                <div class="col-sm-6">
-                <label for="firstName" class="form-label">Nome</label>
-                <input type="text" class="form-control" placeholder="Nome" value="" required>
-                <div class="invalid-feedback">
-                    Valid first name is required.
-                </div>
-                </div>
-
-                <div class="col-6">
-                <label for="username" class="form-label">Telefone</label>
-                <div class="input-group has-validation">
-                    <input type="text" class="form-control" placeholder="Telefone" value="" required>
-                <div class="invalid-feedback">
-                    Your username is required.
+                    <div class="col-6">
+                    <label for="setor" class="form-label">Setor de trabalho</label>
+                    <select name="setor" id="input" class="form-control" required>
+                        <option value="">---</option>
+                        <option value="ti">TI</option>
+                        <option value="adm">Administração</option>
+                        <option value="ens">Ensino</option>
+                    </select>
+                    </div>
+                    
+                    <div class="col-6">
+                    <label for="funcao" class="form-label">Função no setor</label>
+                    <select name="funcao" id="input" class="form-control" required>
+                        <option value="">---</option>
+                        <option value="programador">Programador</option>
+                        <option value="gestora">Gestora de RH</option>
+                        <option value="professor">Professor</option>
+                    </select>
+                    </div>
+                    
+                    <div class="col-md-12">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
                     </div>
                 </div>
-                </div>
-
-                <div class="col-6">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="you@example.com" value="">
-                <div class="invalid-feedback">
-                    Please enter a valid email address for shipping updates.
-                </div>
-                </div>
-
-                <div class="col-6">
-                <label for="address" class="form-label">Endereço</label>
-                <input type="text" class="form-control" id="address" placeholder="1234 Main St" value="" required>
-                <div class="invalid-feedback">
-                    Please enter your shipping address.
-                </div>
-                </div>
-
-                <div class="col-md-5">
-                <label for="country" class="form-label">País</label>
-                <input type="text" class="form-control" id="country" value="" required>
-                <div class="invalid-feedback">
-                    Please select a valid country.
-                </div>
-                </div>
-
-                <div class="col-md-4">
-                <label for="state" class="form-label">Estado</label>
-                <input type="text" class="form-control" id="state" value="" required>
-                <div class="invalid-feedback">
-                    Please provide a valid state.
-                </div>
-                </div>
-
-                <div class="col-md-3">
-                <label for="zip" class="form-label">Cep</label>
-                <input type="text" class="form-control" id="zip" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                    Zip code required.
-                </div>
-                </div>
-
-                <div class="col-md-12">
-                    <button class="btn btn-primary" type="submit">Submit form</button>
-                </div>
-            </div>
-
-            <hr class="my-5">
-
             </form>
-        </div>
+            </div>
+            </form>
         </div>
     </main>
     </div>
 </section>
+
+<script type="javascript" src="../js/check.js"></script>

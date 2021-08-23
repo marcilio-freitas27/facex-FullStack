@@ -1,18 +1,15 @@
 
 
-<section>
-    <div class="container">
-    <main>
-        <form method="POST" id="form1" action="inserir_cadastro.php">
-            <div class="py-5 text-center">
-            <h2>Dados de Funcionário</h2>
-            </div>
+<section class="gap-1">
+    <div class=" p-2 container">
+    <main class="card">
+        <div class="py-5 text-center card-header">
+            <h2>Dados do Funcionário</h2>
+        </div>
+        <div class="card-body">
+            <form method='POST' id='form1' action='?pagina=escolha'>
 
             <div class="row">
-            <div class="">
-                <h4 class="mb-3">Dados Pessoais</h4>
-
-                <hr class="my-4">
 
                 <form class="needs-validation" id="login" novalidate>
                 <div class="row g-3">
@@ -27,7 +24,7 @@
                     <div class="col-6">
                     <label for="setor" class="form-label">Setor de trabalho</label>
                     <select name="setor" id="input" class="form-control" required>
-                        <option value="escolha">---</option>
+                        <option value="">---</option>
                         <option value="ti">TI</option>
                         <option value="adm">Administração</option>
                         <option value="ens">Ensino</option>
@@ -37,7 +34,7 @@
                     <div class="col-6">
                     <label for="funcao" class="form-label">Função no setor</label>
                     <select name="funcao" id="input" class="form-control" required>
-                        <option value="escolha">---</option>
+                        <option value="">---</option>
                         <option value="programador">Programador</option>
                         <option value="gestora">Gestora de RH</option>
                         <option value="professor">Professor</option>
@@ -47,7 +44,7 @@
                     <div class="col-6">
                     <label for="acompanhante" class="form-label">Tem acompanhante?</label>
                     <select name="acompanhante" id="input" class="form-control" required>
-                        <option value="escolha">---</option>
+                        <option value="">---</option>
                         <option value="sim">Sim</option>
                         <option value="não">Não</option>
                     </select>
@@ -58,10 +55,9 @@
                     </div>
                 </div>
             </form>
-            <hr class="my-5">
-            <div>
             <div>
             </form>
+        </div>
     </main>
     </div>
 </section>

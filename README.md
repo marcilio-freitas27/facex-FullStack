@@ -14,7 +14,13 @@
 ## Acesso ao Dashboard
 
 * usuario: admin@teste.com
-* senha: 123 
+* senha: 12345
+
+## Acesso comum
+
+* usuario: teste@email.com
+* senha: 123
+
 
 ## SQL
 

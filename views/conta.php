@@ -1,5 +1,5 @@
-<section>
-<div class="container">
+<section class="gap-1">
+<div class="p-2 container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">

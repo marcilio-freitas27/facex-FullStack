@@ -5,7 +5,7 @@
 ?>
 
 
-<div class="d-grip gap-2"></div>
+<div class="d-grip gap-2">
 <section class="container">
   
   <div class="p-2">
@@ -18,9 +18,9 @@
   </div>
   
   <div class="p-2">
-    <div class="card">
-      <h2 class="card-header">Funcionarios que responderam ao questionário</h2>
-        <table class='card-body table display' id="myTable">
+    <div class="card table-responsive" id="no-more-tables">
+      <h2 class="card-header pb-2">Funcionarios que responderam ao questionário</h2>
+        <table class='card-body table table-striped w-auto display' id="myTable">
           <thead>  
             <tr>
               <th scope="col">#</th>
@@ -34,10 +34,10 @@
           while ($linha = mysqli_fetch_array($queryum)) {
             echo 
                   "<tr>"
-                  . "<td>" . '#' . "</td>"
-                  . "<td>" . $linha['nome'] . "</td>"
-                  . "<td>" . $linha['funcao_setor'] . "</td>"
-                  . "<td>" . $linha['setor_trabalho'] . "</td>";
+                  . "<td data-title='#'>" . '#' . "</td>"
+                  . "<td data-title='Nome'>" . $linha['nome'] . "</td>"
+                  . "<td data-title='Função'>" . $linha['funcao_setor'] . "</td>"
+                  . "<td data-title='Setor'>" . $linha['setor_trabalho'] . "</td>";
                   ?>
 
               <td><a href="?pagina=editar&id=<?php echo $linha['id']?>">Editar</a></td>
@@ -47,6 +47,7 @@
     </div>
   </div>
 </section>
+</div>
 
 
 
